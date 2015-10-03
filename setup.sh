@@ -18,6 +18,19 @@ brew cask install google-chrome
 brew cask install skype
 brew cask install slack
 brew cask install atom
+brew cask install xquartz
+brew cask install bonjour-browser
+brew cask install dash
+brew cask install dropbox
+brew cask install evernote
+brew cask install flux
+brew cask install flycut
+brew cask install git
+brew cask install mongohub
+brew cask install rubymine
+brew cask install screenhero
+brew cask install spectacle
+brew cask install vlc
 
 # Install chruby
 echo "Installing chruby..."
