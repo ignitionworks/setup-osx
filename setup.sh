@@ -64,3 +64,6 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # Setup terminal to use Homebrew
 defaults write ~/Library/Preferences/com.apple.Terminal.plist "Default Window Settings" "Homebrew"
 defaults write ~/Library/Preferences/com.apple.Terminal.plist "Startup Window Settings" "Homebrew"
+
+# Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 0
