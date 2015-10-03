@@ -35,6 +35,10 @@ brew cask install vlc
 brew tap neovim/neovim
 brew install --HEAD neovim
 
+brew install aws-cfn-tools
+brew install s3cmd
+brew install postgresql
+
 # Install chruby
 echo "Installing chruby..."
 brew install chruby
