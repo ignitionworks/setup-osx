@@ -13,7 +13,7 @@ fi
 # Install Homebrew Cask
 echo "Installing Homebrew Cask..."
 brew install caskroom/cask/brew-cask
-brew cask search
+brew cask search > /dev/null # This sets up brew cask
 brew cask install google-chrome
 brew cask install skype
 brew cask install slack
