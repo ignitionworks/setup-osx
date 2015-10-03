@@ -37,7 +37,12 @@ brew install --HEAD neovim
 
 brew install aws-cfn-tools
 brew install s3cmd
+
+# Install posgresql
 brew install postgresql
+mkdir -p ~/Library/LaunchAgents
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Install chruby
 echo "Installing chruby..."
