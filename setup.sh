@@ -32,6 +32,9 @@ brew cask install screenhero
 brew cask install spectacle
 brew cask install vlc
 
+brew tap neovim/neovim
+brew install --HEAD neovim
+
 # Install chruby
 echo "Installing chruby..."
 brew install chruby
