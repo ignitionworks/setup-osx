@@ -6,6 +6,6 @@ end
 task default: [
   'settings:osx',
   'settings:bash_it',
-  'languages:ruby',
-  'languages:node'
+  'language:ruby',
+  'language:node'
 ] + APPLICATIONS.map { |name| "application:#{name}" }
