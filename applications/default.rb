@@ -27,6 +27,7 @@ APPLICATIONS = []
 end
 
 %w(
+  ag
   s3cmd
 ).each do |app_name|
   desc "Install #{app_name}"

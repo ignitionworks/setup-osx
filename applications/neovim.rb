@@ -2,6 +2,7 @@ require 'applications/default'
 
 desc 'Install neovim'
 task 'application:neovim' => %w(
+  application:ag
   package_managers:homebrew
   package_managers:pathogen
 ) do
@@ -12,7 +13,6 @@ task 'application:neovim' => %w(
 
   bundle_directory = File.expand_path('~/.nvim/bundle')
   %w(
-    https://github.com/altercation/vim-colors-solarized.git
     https://github.com/kien/ctrlp.vim.git
     https://github.com/rking/ag.vim.git
     https://github.com/scrooloose/nerdtree.git
@@ -37,8 +37,8 @@ set nocompatible
 execute pathogen#infect()
 syntax enable
 
-colorscheme solarized
-set background=dark
+" colorscheme solarized
+" set background=dark
 
 set backspace=indent,eol,start
 set spell
@@ -99,9 +99,9 @@ augroup vimrcEx
 au!
 autocmd FileType text setlocal textwidth=78
 autocmd BufReadPost *
-  \ if line("'\"") > 1 && line("'\"") <= line("$") |
-  \   exe "normal! g`\"" |
-  \ endif
+  \\ if line("'\\"") > 1 && line("'\\"") <= line("$") |
+  \\   exe "normal! g`\\"" |
+  \\ endif
 augroup END
 
 else
@@ -110,7 +110,7 @@ endif " has("autocmd")
 
 if !exists(":DiffOrig")
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-    \ | wincmd p | diffthis
+    \\ | wincmd p | diffthis
 endif
 
 nnoremap ; :
