@@ -7,4 +7,6 @@ task 'settings:bash_it' do
     system("git clone --depth=1 https://github.com/Bash-it/bash-it.git #{bash_it_path}")
     system(File.join(bash_it_path, 'install.sh'))
   end
+
+  system 'bash -lc "bash-it enable plugin osx"'
 end
