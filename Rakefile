@@ -1,10 +1,11 @@
 $LOAD_PATH.unshift(__dir__)
-Dir.glob(File.join(__dir__, '**', '*.rake')).each do |rake_file|
-  load rake_file
+Dir.glob(File.join(__dir__, '**', '*.rb')).each do |rake_file|
+  require rake_file
 end
 
 task default: [
   'settings:osx',
   'settings:bash_it',
-  'languages:ruby'
+  'languages:ruby',
+  'languages:node'
 ] + APPLICATIONS.map { |name| "application:#{name}" }

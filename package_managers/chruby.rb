@@ -5,5 +5,5 @@ task 'package_managers:chruby' => %w(
 ) do
   system 'brew install chruby'
   system 'brew install ruby-install'
-  system 'bash -l "bash_it enable chruby-auto"'
+  system 'bash -lc "bash-it enable plugin chruby-auto"'
 end
