@@ -15,6 +15,7 @@ APPLICATIONS = []
   rubymine
   screenhero
   spectacle
+  rowanj-gitx
   vlc
   java
 ).each do |app_name|
