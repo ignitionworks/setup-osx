@@ -20,7 +20,7 @@ task 'application:neovim' => %w(
     https://github.com/tpope/vim-endwise.git
     https://github.com/thoughtbot/vim-rspec.git
   ).each do |vim_package_url|
-    name = File.basename(vim_package_url.split('/').last, '.git')
+    name = File.basename(vim_package_url, '.git')
     path = File.join(bundle_directory, name)
     if File.exist?(path)
       Dir.chdir(path) { system 'git pull' }
