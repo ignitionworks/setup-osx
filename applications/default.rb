@@ -16,6 +16,7 @@ APPLICATIONS = []
   'java' => [],
   'mongohub' => [],
   'pepper-flash' => [],
+  'qtpass' => [],
   'rowanj-gitx' => [],
   'rubymine' => ['application:java6'],
   'screenhero' => [],
