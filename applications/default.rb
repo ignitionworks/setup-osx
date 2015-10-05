@@ -4,24 +4,25 @@ require 'package_managers/homebrew_cask'
 APPLICATIONS = []
 
 {
-  'google-chrome' => [],
-  'skype' => [],
-  'slack' => [],
-  'xquartz' => [],
   'bonjour-browser' => [],
   'dash' => [],
   'dropbox' => [],
   'evernote' => [],
+  'firefox-uk' => [],
   'flux' => [],
   'flycut' => [],
+  'google-chrome' => [],
+  'java' => [],
   'mongohub' => [],
+  'pepper-flash' => [],
+  'rowanj-gitx' => [],
   'rubymine' => ['application:java6'],
   'screenhero' => [],
+  'skype' => [],
+  'slack' => [],
   'spectacle' => [],
-  'rowanj-gitx' => [],
   'vlc' => [],
-  'java' => [],
-  'pepper-flash' => []
+  'xquartz' => []
 }.each do |app_name, dependencies|
   brew_cask(app_name => dependencies)
 
