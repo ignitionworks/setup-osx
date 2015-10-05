@@ -16,7 +16,7 @@ APPLICATIONS = []
   'java' => [],
   'mongohub' => [],
   'pepper-flash' => [],
-  'qtpass' => [],
+  'qtpass' => ['application:gnupg2'],
   'rowanj-gitx' => [],
   'rubymine' => ['application:java6'],
   'screenhero' => [],
@@ -33,8 +33,10 @@ end
 
 {
   'ag' => [],
-  'aws-cfn-tools' => ['application:java'],
+  'apg' => [],
+  'aws-elasticbeanstalk' => [],
   'pass' => [],
+  'gnupg2' => [],
   'pstree' => [],
   's3cmd' => []
 }.each do |app_name, dependencies|
