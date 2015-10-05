@@ -11,12 +11,12 @@ task 'application:git_duet' => %w(
   system 'brew install git-duet'
 
   config = {
-    "authors" => {
-      "tc" => "Theo Cushion; theo",
-      "no" => "Nadia Odunayo; nadia"
+    'authors' => {
+      'tc' => 'Theo Cushion; theo',
+      'no' => 'Nadia Odunayo; nadia'
     },
-    "email" => {
-      "domain" => "ignition.works"
+    'email' => {
+      'domain' => 'ignition.works'
     }
   }
 
