@@ -5,6 +5,7 @@ APPLICATIONS = []
 
 {
   'bonjour-browser' => [],
+  'caffeine' => [],
   'dash' => [],
   'dropbox' => [],
   'evernote' => [],
@@ -31,9 +32,10 @@ end
 
 {
   'ag' => [],
-  's3cmd' => [],
   'aws-cfn-tools' => ['application:java'],
-  'pstree' => []
+  'pass' => [],
+  'pstree' => [],
+  's3cmd' => []
 }.each do |app_name, dependencies|
   brew(app_name => dependencies)
 
