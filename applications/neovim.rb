@@ -37,8 +37,8 @@ set nocompatible
 execute pathogen#infect()
 syntax enable
 
-" colorscheme solarized
-" set background=dark
+colorscheme solarized
+set background=dark
 
 set backspace=indent,eol,start
 set spell
