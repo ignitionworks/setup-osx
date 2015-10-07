@@ -66,7 +66,7 @@ set noswapfile
 set nobackup
 set nowritebackup
 
-set colorcolumn=80
+set colorcolumn=110
 
 au BufRead,BufNewFile *.md set filetype=markdown
 
