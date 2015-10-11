@@ -4,6 +4,7 @@ require 'package_managers/homebrew_cask'
 APPLICATIONS = []
 
 {
+  '1password' => [],
   'bonjour-browser' => [],
   'caffeine' => [],
   'dash' => [],
@@ -17,7 +18,9 @@ APPLICATIONS = []
   'little-snitch' => [],
   'mongohub' => [],
   'pepper-flash' => [],
+  'pgadmin3' => [],
   'qtpass' => ['application:gnupg2'],
+  'rdm' => [], # Redis Desktop Manager
   'rowanj-gitx' => [],
   'rubymine' => ['application:java6'],
   'screenhero' => [],
