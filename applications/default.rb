@@ -19,6 +19,7 @@ APPLICATIONS = []
   'mongohub' => [],
   'pepper-flash' => [],
   'pgadmin3' => [],
+  'psequel' => [],
   'qtpass' => ['application:gnupg2'],
   'rdm' => [], # Redis Desktop Manager
   'rowanj-gitx' => [],
