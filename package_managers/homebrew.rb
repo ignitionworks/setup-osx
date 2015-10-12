@@ -1,5 +1,5 @@
 desc 'Install Homebrew'
-task 'package_managers:homebrew' do
+task 'package_manager:homebrew' do
   if system('command -v brew')
     system('brew update')
   else
@@ -9,7 +9,7 @@ end
 
 def brew(name_and_dependencies)
   app_name = name_and_dependencies.keys.first
-  dependencies = name_and_dependencies[app_name] + ['package_managers:homebrew']
+  dependencies = name_and_dependencies[app_name] + ['package_manager:homebrew']
   desc "Install #{app_name}"
   task "application:#{app_name}" => dependencies do
     system "brew install #{app_name}"

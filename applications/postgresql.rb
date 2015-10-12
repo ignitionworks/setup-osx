@@ -1,7 +1,7 @@
 require 'applications/default'
 
 desc 'Install postgresql'
-task 'application:postgresql' => 'package_managers:homebrew' do
+task 'application:postgresql' => 'package_manager:homebrew' do
   system 'brew install postgresql'
   require 'fileutils'
   FileUtils.mkdir_p File.expand_path('~/Library/LaunchAgents')

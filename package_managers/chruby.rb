@@ -1,6 +1,6 @@
 desc 'Install Chruby'
-task 'package_managers:chruby' => %w(
-  package_managers:homebrew
+task 'package_manager:chruby' => %w(
+  package_manager:homebrew
   settings:bash_it
 ) do
   system 'brew install chruby'

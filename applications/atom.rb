@@ -1,7 +1,7 @@
 require 'applications/default'
 
 desc 'Install atom'
-task 'application:atom' => 'package_managers:homebrew_cask' do
+task 'application:atom' => 'package_manager:homebrew_cask' do
   system 'brew cask install atom'
   %w(
     atom-alignment

@@ -1,5 +1,5 @@
 desc 'Install nvm'
-task 'package_managers:nvm' => 'settings:bash_it' do
+task 'package_manager:nvm' => 'settings:bash_it' do
   nvm_path = File.expand_path('~/.nvm')
   system("git clone https://github.com/creationix/nvm.git #{nvm_path}") unless File.exist?(nvm_path)
   Dir.chdir(nvm_path) do

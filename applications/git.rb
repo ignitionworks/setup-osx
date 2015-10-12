@@ -1,7 +1,7 @@
 require 'applications/default'
 
 desc 'Install git'
-task 'application:git' => ['package_managers:homebrew_cask'] do
+task 'application:git' => ['package_manager:homebrew_cask'] do
   system 'brew install git'
   system 'git config --global push.default simple'
   system 'git config --global pull.rebase true'

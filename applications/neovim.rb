@@ -3,8 +3,8 @@ require 'applications/default'
 desc 'Install neovim'
 task 'application:neovim' => %w(
   application:ag
-  package_managers:homebrew
-  package_managers:pathogen
+  package_manager:homebrew
+  package_manager:pathogen
 ) do
   system 'brew tap neovim/neovim'
   system 'brew install --HEAD neovim'

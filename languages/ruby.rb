@@ -1,5 +1,5 @@
 desc 'Setup ruby'
-task 'language:ruby' => 'package_managers:chruby' do
+task 'language:ruby' => 'package_manager:chruby' do
   unless File.exist?(File.expand_path('~/.rubies/ruby-2.2.3'))
     system 'ruby-install ruby 2.2.3'
   end
